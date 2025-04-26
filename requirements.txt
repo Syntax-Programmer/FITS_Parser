@@ -1,3 +1,6 @@
 numpy
 astropy
 pyfiglet
+typing
+matplotlib
+pandas
