@@ -93,3 +93,30 @@ Locate to the project directory and run:
 ```bash
 python3 Decoder.py
 ```
+
+## How to Write the ToParse.csv for Parsing
+
+### Step 1: Create file "ToParse.csv" in the FITS_Parser directory
+
+### Step 2: Writing the File
+
+#### NOTE: Following the formatting guidelines given below is the responsibility of the user. Minimal checks are performed to verify validity.
+
+The format to write a single line to the file:
+
+```txt
+absolute_filepath.fits,metadata=true/false
+```
+
+- Maintain the delimiter as ",".
+
+- First comes the **file path** to the FITS file to parse, it has to be absolute path, or relative to the **FITS_Parser** directory.
+
+- Second is the **metadata** flag, specifying weather to include metadata in the parsed file. In the above format, the "metadata=true/false" flag is case independent so go crazy.
+
+Example:
+
+```txt
+test.fits,metadata=false
+impo.fits,metadata=true
+```
